@@ -1,12 +1,11 @@
 var util = require('util');
 var levelup = require('levelup');
-var memdown = require('memdown');
+var leveldown = require('leveldown');
 
 module.exports = function(zetta) {
   var Registry = zetta.DeviceRegistry;
   var MemRegistry = function() {
-    console.log('start reg')
-    var db = levelup({ db: memdown });
+    var db = levelup('./.devices', { db: leveldown });
     Registry.call(this, { db: db, collection: 'devices' });
   }
   util.inherits(MemRegistry, Registry);

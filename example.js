@@ -1,7 +1,8 @@
 var zetta = require('zetta');
-var MemoryRegistries = require('./')(zetta);
-var PeerRegistry = MemoryRegistries.PeerRegistry;
-var DeviceRegistry = MemoryRegistries.DeviceRegistry;
+var LED = require('zetta-led-mock-driver');
+var LevelRegistries = require('./')(zetta);
+var PeerRegistry = LevelRegistries.PeerRegistry;
+var DeviceRegistry = LevelRegistries.DeviceRegistry;
 
 zetta({ registry: new DeviceRegistry(), peerRegistry: new PeerRegistry()})
   .use(LED)

@@ -1,7 +1,7 @@
 {
-  "name": "zetta-memory-registry",
+  "name": "zetta-leveldb-registry",
   "version": "0.1.0",
-  "description": "Zetta in-memory device and peer registries",
+  "description": "Zetta leveldb device and peer registries",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,19 +9,19 @@
   "author": "Adam Magaluk <AdamMagaluk@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "levelup": "^1.2.1",
-    "memdown": "^1.0.0"
+    "leveldown": "^1.4.2",
+    "levelup": "^1.2.1"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zettajs/zetta-memory-registry.git"
+    "url": "git+https://github.com/zettajs/zetta-leveldb-registry.git"
   },
   "keywords": [
     "zetta"
   ],
   "bugs": {
-    "url": "https://github.com/zettajs/zetta-memory-registry/issues"
+    "url": "https://github.com/zettajs/zetta-leveldb-registry/issues"
   },
-  "homepage": "https://github.com/zettajs/zetta-memory-registry#readme"
+  "homepage": "https://github.com/zettajs/zetta-leveldb-registry#readme"
 }
